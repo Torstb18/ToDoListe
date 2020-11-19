@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"   href="/css/style.css">
+    <link rel="shortcut icon" href="#" />
     <title>Document</title>
 </head>
 <body>
+    <div class = "container">
+        <h1>To Do List</h1>
+        <div class="tab">
+            <button class="tab" onclick="openTab(event, 'addTask')">Add task</button>
+            <button class="tab" onclick="openTab(event, 'toDo')">To do</button>
+            <button class="tab" onclick="openTab(event, 'completed')">Completed</button>
+          </div>
+           
+            
+         
+
+              <container id="addTask" class="content">
+                <input type="text" id="input">
+                <button id="newTask" onclick="addTask(event)">add</button>
+              </container>
+              
+              <container id="toDo" class="content">
+                <ul id="incompleteTask"></ul>
+
+              </container>
+              
+              <container id="completed" Class="content">
+
+              </container>
+
+        </div>
+    </div>
+
+    <ul id="myList">
+
+    </ul>
+
+    <script src="./JS/to-do-list.js"></script>
     
 </body>
 </html>
